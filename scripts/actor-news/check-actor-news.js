@@ -2,10 +2,21 @@
 // 필요 env: SUPABASE_URL, SUPABASE_SERVICE_KEY, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY
 const webpush = require('web-push');
 
-const SUPA_URL = process.env.SUPABASE_URL;
-const SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY;
-const VAPID_PUBLIC = process.env.VAPID_PUBLIC_KEY;
-const VAPID_PRIVATE = process.env.VAPID_PRIVATE_KEY;
+// .trim()으로 복사/붙여넣기 시 섞여 들어간 공백·개행을 방어적으로 제거
+const SUPA_URL = (process.env.SUPABASE_URL || '').trim();
+const SERVICE_KEY = (process.env.SUPABASE_SERVICE_KEY || '').trim();
+const VAPID_PUBLIC = (process.env.VAPID_PUBLIC_KEY || '').trim();
+const VAPID_PRIVATE = (process.env.VAPID_PRIVATE_KEY || '').trim();
+
+if (!SUPA_URL || !SERVICE_KEY || !VAPID_PUBLIC || !VAPID_PRIVATE) {
+  console.error('환경변수 누락:', {
+    SUPABASE_URL: !!SUPA_URL,
+    SUPABASE_SERVICE_KEY: !!SERVICE_KEY,
+    VAPID_PUBLIC_KEY: !!VAPID_PUBLIC,
+    VAPID_PRIVATE_KEY: !!VAPID_PRIVATE,
+  });
+  process.exit(1);
+}
 
 webpush.setVapidDetails('mailto:admin@dramacube.local', VAPID_PUBLIC, VAPID_PRIVATE);
 
