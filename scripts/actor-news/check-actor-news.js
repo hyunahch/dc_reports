@@ -2,11 +2,14 @@
 // 필요 env: SUPABASE_URL, SUPABASE_SERVICE_KEY, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY
 const webpush = require('web-push');
 
-// .trim()으로 복사/붙여넣기 시 섞여 들어간 공백·개행을 방어적으로 제거
-const SUPA_URL = (process.env.SUPABASE_URL || '').trim();
-const SERVICE_KEY = (process.env.SUPABASE_SERVICE_KEY || '').trim();
-const VAPID_PUBLIC = (process.env.VAPID_PUBLIC_KEY || '').trim();
-const VAPID_PRIVATE = (process.env.VAPID_PRIVATE_KEY || '').trim();
+// 앞뒤 공백뿐 아니라 값 중간에 섞여 들어간 개행·제어문자까지 전부 제거 (복붙 사고 방어)
+function clean(v) {
+  return (v || '').replace(/[\r\n\t\x00-\x1F\x7F]/g, '').trim();
+}
+const SUPA_URL = clean(process.env.SUPABASE_URL);
+const SERVICE_KEY = clean(process.env.SUPABASE_SERVICE_KEY);
+const VAPID_PUBLIC = clean(process.env.VAPID_PUBLIC_KEY);
+const VAPID_PRIVATE = clean(process.env.VAPID_PRIVATE_KEY);
 
 if (!SUPA_URL || !SERVICE_KEY || !VAPID_PUBLIC || !VAPID_PRIVATE) {
   console.error('환경변수 누락:', {
@@ -17,6 +20,9 @@ if (!SUPA_URL || !SERVICE_KEY || !VAPID_PUBLIC || !VAPID_PRIVATE) {
   });
   process.exit(1);
 }
+
+// 진단용: 실제 값 노출 없이 길이/앞3글자만 로그로 남김 (문제가 값 자체인지 확인용)
+console.log('SERVICE_KEY 길이:', SERVICE_KEY.length, '/ 시작:', SERVICE_KEY.slice(0,3));
 
 webpush.setVapidDetails('mailto:admin@dramacube.local', VAPID_PUBLIC, VAPID_PRIVATE);
 
