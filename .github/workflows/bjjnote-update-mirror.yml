@@ -28,17 +28,37 @@ jobs:
       - name: Read source
         run: |
           set -euo pipefail
-          echo "SOURCE_URL=$(node -p "require('./bjjnote-update/source.json').sourceUrl")" >> "$GITHUB_ENV"
-          echo "EXPECTED_VERSION=$(node -p "require('./bjjnote-update/source.json').expectedVersion")" >> "$GITHUB_ENV"
+          node <<'NODE'
+          const fs = require('fs');
+          const source = require('./bjjnote-update/source.json');
+          const out = [];
+          out.push(`EXPECTED_VERSION=${source.expectedVersion}`);
+          if (source.apkSourceUrl && source.manifestSourceUrl) {
+            out.push('SOURCE_MODE=direct');
+            out.push(`APK_SOURCE_URL=${source.apkSourceUrl}`);
+            out.push(`MANIFEST_SOURCE_URL=${source.manifestSourceUrl}`);
+          } else if (source.sourceUrl) {
+            out.push('SOURCE_MODE=artifact');
+            out.push(`SOURCE_URL=${source.sourceUrl}`);
+          } else {
+            throw new Error('No updater source URL configured.');
+          }
+          fs.appendFileSync(process.env.GITHUB_ENV, out.join('\n') + '\n');
+          NODE
 
-      - name: Download private release artifact through one-time bridge URL
+      - name: Download private release through one-time bridge URL
         run: |
           set -euo pipefail
-          curl --fail --location --retry 3 --retry-delay 2 "$SOURCE_URL" -o /tmp/bjjnote-update.zip
-          unzip -t /tmp/bjjnote-update.zip
           rm -rf /tmp/bjjnote-update
           mkdir -p /tmp/bjjnote-update
-          unzip -o /tmp/bjjnote-update.zip -d /tmp/bjjnote-update
+          if [ "$SOURCE_MODE" = "direct" ]; then
+            curl --fail --location --retry 3 --retry-delay 2 "$APK_SOURCE_URL" -o /tmp/bjjnote-update/bjjnote-update.apk
+            curl --fail --location --retry 3 --retry-delay 2 "$MANIFEST_SOURCE_URL" -o /tmp/bjjnote-update/latest.json
+          else
+            curl --fail --location --retry 3 --retry-delay 2 "$SOURCE_URL" -o /tmp/bjjnote-update.zip
+            unzip -t /tmp/bjjnote-update.zip
+            unzip -o /tmp/bjjnote-update.zip -d /tmp/bjjnote-update
+          fi
 
       - name: Publish stable public updater files
         run: |
