@@ -1,0 +1,90 @@
+name: BJJ Note Update Mirror
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "bjjnote-update/source.json"
+      - ".github/workflows/bjjnote-update-mirror.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bjjnote-update-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public mirror repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read source
+        run: |
+          set -euo pipefail
+          echo "SOURCE_URL=$(node -p "require('./bjjnote-update/source.json').sourceUrl")" >> "$GITHUB_ENV"
+          echo "EXPECTED_VERSION=$(node -p "require('./bjjnote-update/source.json').expectedVersion")" >> "$GITHUB_ENV"
+
+      - name: Download private release artifact through one-time bridge URL
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --retry-delay 2 "$SOURCE_URL" -o /tmp/bjjnote-update.zip
+          unzip -t /tmp/bjjnote-update.zip
+          rm -rf /tmp/bjjnote-update
+          mkdir -p /tmp/bjjnote-update
+          unzip -o /tmp/bjjnote-update.zip -d /tmp/bjjnote-update
+
+      - name: Publish stable public updater files
+        run: |
+          set -euo pipefail
+          APK="$(find /tmp/bjjnote-update -type f -name 'bjjnote-update.apk' -print -quit)"
+          MANIFEST="$(find /tmp/bjjnote-update -type f -name 'latest.json' -print -quit)"
+          test -n "$APK"
+          test -n "$MANIFEST"
+          test -s "$APK"
+          test -s "$MANIFEST"
+          mkdir -p bjjnote-update
+          cp "$APK" bjjnote-update/bjjnote.apk
+          cp "$MANIFEST" bjjnote-update/latest.json
+          node <<'NODE'
+          const fs = require('fs');
+          const crypto = require('crypto');
+          const path = 'bjjnote-update/latest.json';
+          const manifest = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const expected = process.env.EXPECTED_VERSION;
+          if (manifest.version !== expected) {
+            throw new Error(`artifact version ${manifest.version} != expected ${expected}`);
+          }
+          const apk = fs.readFileSync('bjjnote-update/bjjnote.apk');
+          manifest.apkUrl = 'https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk';
+          manifest.sha256 = crypto.createHash('sha256').update(apk).digest('hex');
+          manifest.mirroredAt = new Date().toISOString();
+          fs.writeFileSync(path, JSON.stringify(manifest, null, 2) + '\n');
+          fs.writeFileSync('bjjnote-update/mirror-status.json', JSON.stringify({
+            status: 'ready',
+            version: manifest.version,
+            versionCode: manifest.versionCode,
+            apkUrl: manifest.apkUrl,
+            sha256: manifest.sha256,
+            mirroredAt: manifest.mirroredAt,
+          }, null, 2) + '\n');
+          NODE
+
+      - name: Commit public update channel
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bjjnote-update/bjjnote.apk bjjnote-update/latest.json bjjnote-update/mirror-status.json
+          if git diff --cached --quiet; then
+            echo "Public update mirror already current."
+          else
+            git commit -m "Mirror BJJ Note v$EXPECTED_VERSION updater"
+            git push origin HEAD:main
+          fi
