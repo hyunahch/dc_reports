@@ -1,0 +1,11 @@
+{
+  "channel": "internal",
+  "version": "0.5.1",
+  "versionCode": 100004,
+  "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
+  "releaseNotes": "Android 상태바와 앱 상단이 겹치지 않도록 Mobile Shell safe-area를 보정했습니다.",
+  "publishedAt": "2026-08-28T15:45:57.551Z",
+  "sourceCommit": "0b63d5342a8e3f50d9c333659d42cf0be869976f",
+  "sha256": "9865c6faf0475793f68bed88929799bd28d588d7c5f872140828bf3064376a92",
+  "mirroredAt": "2026-08-28T22:39:50.377Z"
+}
