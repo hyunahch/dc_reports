@@ -1,5 +1,5 @@
 {
-  "apkSourceUrl": "https://raw.githubusercontent.com/hyunahch/bjj-technique-atlas/main/update/bjjnote.apk?token=CLLJ52ULYZWFUTC7LNLWXBTKSIIXPAA",
-  "manifestSourceUrl": "https://raw.githubusercontent.com/hyunahch/bjj-technique-atlas/main/update/latest.json?token=CLLJ52RRB35Y5OFI4KZCZQDKSIIXPAA",
-  "expectedVersion": "0.5.2"
+  "apkSourceUrl": "https://raw.githubusercontent.com/hyunahch/bjj-technique-atlas/main/update/bjjnote.apk?token=CLLJ52STHLHJLPPW5QH6DJTKSILNDAA",
+  "manifestSourceUrl": "https://raw.githubusercontent.com/hyunahch/bjj-technique-atlas/main/update/latest.json?token=CLLJ52QYFOF3OMDXHK3BBDDKSILNDAA",
+  "expectedVersion": "0.5.3"
 }
