@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.5.2",
-  "versionCode": 100009,
+  "version": "0.5.3",
+  "versionCode": 100010,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "1e49ba143ef7d17e04eb130d0e352bce7cfb96f772164651083648fd1ddc8b19",
-  "releaseNotes": "자동 업데이트 서버를 인증 없는 공개 고정 주소로 전환했습니다.",
-  "publishedAt": "2026-08-28T22:52:03.794Z",
-  "sourceCommit": "c589fe18bf327d2275946fb69005e7eb1b553c5e",
-  "mirroredAt": "2026-08-28T22:53:08.049Z"
+  "sha256": "466231c43b496fbd885bbf0ac6b2b68b4cf7fbd2c0c23e668838f29c893b3175",
+  "releaseNotes": "인앱 자동 업데이트 end-to-end 검증용 릴리스입니다. 다운로드 실패 복구 상태도 보강했습니다.",
+  "publishedAt": "2026-08-28T23:01:19.231Z",
+  "sourceCommit": "7b284ac9d4f009c11147bc3da3f04e3706d4c173",
+  "mirroredAt": "2026-08-28T23:16:13.908Z"
 }
