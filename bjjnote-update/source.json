@@ -1,5 +1,4 @@
 {
-  "apkSourceUrl": "https://raw.githubusercontent.com/hyunahch/bjj-technique-atlas/main/update/bjjnote.apk?token=CLLJ52STHLHJLPPW5QH6DJTKSILNDAA",
-  "manifestSourceUrl": "https://raw.githubusercontent.com/hyunahch/bjj-technique-atlas/main/update/latest.json?token=CLLJ52QYFOF3OMDXHK3BBDDKSILNDAA",
-  "expectedVersion": "0.5.3"
+  "sourceUrl": "https://sdmntprjapaneast.oaiusercontent.com/files/00000000-a9b8-8209-9888-b33446c1b205/raw?se=2026-08-28T23%3A46%3A53Z&sp=r&sv=2026-02-06&sr=b&scid=9aa4baad-a576-52ab-9bca-4e34891999ae&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-28T19%3A58%3A18Z&ske=2026-08-29T19%3A58%3A18Z&sks=b&skv=2026-02-06&sig=BTnd/4exE/adtsZXrUqHT0YRKmUF7HY4IFg653x4B%2B4%3D",
+  "expectedVersion": "0.5.4"
 }
