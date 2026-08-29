@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.5.5",
-  "versionCode": 100012,
+  "version": "0.5.6",
+  "versionCode": 100013,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "97554b472b1c943562a42a93ff877287007f58474ff1e0858717b75ae81b90b8",
-  "releaseNotes": "흐름 탭을 기술 흐름과 시합 시나리오로 나누고, 첫 개인 A-Game으로 상대 선그립 → 스파이더 가드 풀 대응 루트를 추가했습니다. Combat Base, 한쪽 스파이더 제거, 소매 그립 정리, 니컷/토레안도 선택 분기까지 포함합니다.",
-  "publishedAt": "2026-08-29T03:23:47.817Z",
-  "sourceCommit": "3b90ffde00df77a0ad008d1d08e8558c409d1b69",
-  "mirroredAt": "2026-08-29T03:25:17.251Z"
+  "sha256": "57cb8e55e07f8efc477a5938478b7d9e18c12986fa99c9f5a038cb8779051c20",
+  "releaseNotes": "시합 시나리오에 두 번째 개인 A-Game인 상대 선그립 → 스탠딩 유지 대응을 추가했습니다. 두 번째 그립 차단, 내 컨트롤 확보, 안쪽 발걸기/오우치 계열, 다리를 빼면 싱글렉 연결, 상대가 앉으면 기존 스파이더 대응 시나리오로 이동하는 분기를 포함합니다.",
+  "publishedAt": "2026-08-29T07:23:07.882Z",
+  "sourceCommit": "a06d6a6169cb61a6e89bb0f6b218b7efe276cf90",
+  "mirroredAt": "2026-08-29T07:25:34.715Z"
 }
