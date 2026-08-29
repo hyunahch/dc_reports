@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.5.4",
-  "versionCode": 100011,
+  "version": "0.5.5",
+  "versionCode": 100012,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "15c900829226af021baae132c543f621cfc6de3b390715a899ccd4fc71d1365c",
-  "releaseNotes": "Solo Drill에 벽 인버전 숄더 롤을 추가했습니다. 벽을 보조 지지점으로 사용하는 드릴을 표시하도록 상세 UI와 모바일/HTTPS YouTube QA도 함께 보강했습니다.",
-  "publishedAt": "2026-08-28T23:41:08.604Z",
-  "sourceCommit": "9b13488955057cfa67bad6acdf8e19ddb5078662",
-  "mirroredAt": "2026-08-28T23:42:10.447Z"
+  "sha256": "97554b472b1c943562a42a93ff877287007f58474ff1e0858717b75ae81b90b8",
+  "releaseNotes": "흐름 탭을 기술 흐름과 시합 시나리오로 나누고, 첫 개인 A-Game으로 상대 선그립 → 스파이더 가드 풀 대응 루트를 추가했습니다. Combat Base, 한쪽 스파이더 제거, 소매 그립 정리, 니컷/토레안도 선택 분기까지 포함합니다.",
+  "publishedAt": "2026-08-29T03:23:47.817Z",
+  "sourceCommit": "3b90ffde00df77a0ad008d1d08e8558c409d1b69",
+  "mirroredAt": "2026-08-29T03:25:17.251Z"
 }
