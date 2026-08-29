@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "version": "0.5.8",
-  "versionCode": 100016,
+  "version": "0.5.9",
+  "versionCode": 100017,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "a183ed6edaccd12786493119dcedbf753a8fbb63135d52acd7d84afb22f499d7",
-  "mirroredAt": "2026-08-29T12:52:28.802Z"
+  "sha256": "ba99a2a36072c0ad4233e0dff45ce1faa233458b6b4618d23123f4cd78d01b56",
+  "mirroredAt": "2026-08-29T13:17:43.906Z"
 }

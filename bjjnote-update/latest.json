@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.5.8",
-  "versionCode": 100016,
+  "version": "0.5.9",
+  "versionCode": 100017,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "a183ed6edaccd12786493119dcedbf753a8fbb63135d52acd7d84afb22f499d7",
-  "releaseNotes": "시합 시나리오 #2에 주력 싱글렉 마무리 Run the Pipe를 추가했습니다. 오우치 회피 → 새 앞다리 헤드 인사이드 싱글 → 팔꿈치·머리 위치 안정 → 발 이동과 몸 회전으로 마무리 → 탑 안정화까지 5단계와 Gold BJJ 영상을 포함합니다.",
-  "publishedAt": "2026-08-29T12:50:42.745Z",
-  "sourceCommit": "a5f0f0b177d2e9784fb04b29e42da72e7315aa1f",
-  "mirroredAt": "2026-08-29T12:52:28.802Z"
+  "sha256": "ba99a2a36072c0ad4233e0dff45ce1faa233458b6b4618d23123f4cd78d01b56",
+  "releaseNotes": "안드로이드 시스템 뒤로가기가 앱을 바로 종료하던 문제를 수정했습니다. 기술/드릴 상세에서는 이전 화면으로, 시합 시나리오 상세에서는 시나리오 목록으로, 기술·흐름·노트 탭 루트에서는 홈으로 이동하며 홈에서 다시 뒤로가기를 눌렀을 때만 앱이 종료됩니다.",
+  "publishedAt": "2026-08-29T13:16:32.021Z",
+  "sourceCommit": "aadee6bae6090b9a3dbf92318bf0c9ae156b9d7b",
+  "mirroredAt": "2026-08-29T13:17:43.906Z"
 }
