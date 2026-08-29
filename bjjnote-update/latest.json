@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.0",
-  "versionCode": 100018,
+  "version": "0.6.1",
+  "versionCode": 100025,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "66fccf5a4174511da8031b25c0908e1144035763c24f7a5bd869cc6d2bc7d111",
-  "releaseNotes": "첫 시합 초보자 교육 모드를 추가했습니다. 흐름 → 시합 시나리오에서 경기 전체 맵, 포지션별 첫 10초, 점수·시간 판단, 경기 당일 체크리스트 4개 가이드를 열 수 있습니다. 정확한 점수 숫자는 특정 대회 룰셋 확정 전까지 고정하지 않고, 안정 → 판단 → 득점/탈출 순서를 중심으로 교육합니다. 경기 당일 체크리스트는 기기에 체크 상태를 저장합니다.",
-  "publishedAt": "2026-08-29T15:10:14.450Z",
-  "sourceCommit": "7de1b9a797b6179d2012f580da2381e5190cd8b5",
-  "mirroredAt": "2026-08-29T15:12:55.505Z"
+  "sha256": "1b311ca18753627c7f64fe17dc498f7f5175291ec4afd5b3b5103bdb693066c5",
+  "releaseNotes": "첫 시합 준비 화면에 전용 일러스트를 연결했습니다. 첫 시합 준비 메인에는 경기 흐름 대표 이미지를, 경기 전체 맵·포지션별 첫 10초·점수·시간 판단·경기 당일 체크리스트 상세에는 각각 대응하는 일러스트를 표시합니다. 느린 기기에서 첫 시합 준비 모듈이 너무 빨리 초기화를 포기하던 레이스 조건도 함께 보강했습니다.",
+  "publishedAt": "2026-08-29T22:56:05.207Z",
+  "sourceCommit": "8e477f21e55dad95300b97157cc13b02b688fff3",
+  "mirroredAt": "2026-08-29T22:57:55.105Z"
 }
