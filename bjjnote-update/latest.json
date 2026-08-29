@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.1",
-  "versionCode": 100025,
+  "version": "0.6.2",
+  "versionCode": 100026,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "1b311ca18753627c7f64fe17dc498f7f5175291ec4afd5b3b5103bdb693066c5",
-  "releaseNotes": "첫 시합 준비 화면에 전용 일러스트를 연결했습니다. 첫 시합 준비 메인에는 경기 흐름 대표 이미지를, 경기 전체 맵·포지션별 첫 10초·점수·시간 판단·경기 당일 체크리스트 상세에는 각각 대응하는 일러스트를 표시합니다. 느린 기기에서 첫 시합 준비 모듈이 너무 빨리 초기화를 포기하던 레이스 조건도 함께 보강했습니다.",
-  "publishedAt": "2026-08-29T22:56:05.207Z",
-  "sourceCommit": "8e477f21e55dad95300b97157cc13b02b688fff3",
-  "mirroredAt": "2026-08-29T22:57:55.105Z"
+  "sha256": "90d691a1fb146ef98feb14eebf645f698e59f85302735e6b322fbb4b4be3b705",
+  "releaseNotes": "흐름 탭에서 새 모바일 화면과 구형 Flow 화면이 동시에 보이던 중복 렌더링을 수정했습니다. 모바일 앱에서는 이제 새 Flow 화면만 단독으로 활성화되며, 구형 flowAppPanel이 생성되더라도 즉시 제거·차단합니다. 시합 시나리오 화면에서는 첫 시합 준비 가이드를 상단으로 정리하고 기존 경기 시작 영역은 개인 시나리오로 구분했습니다. 빌드 단계에도 구형 Flow 렌더러가 모바일 산출물에 포함되지 않는지 검증을 추가했습니다.",
+  "publishedAt": "2026-08-29T23:31:21.783Z",
+  "sourceCommit": "d40d76f6161e3c758bffbb018a118c1efeb64a12",
+  "mirroredAt": "2026-08-29T23:33:05.513Z"
 }
