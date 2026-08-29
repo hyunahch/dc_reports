@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.5.7",
-  "versionCode": 100014,
+  "version": "0.5.8",
+  "versionCode": 100016,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "7c8ee38b0b9eaef0095cb3611e3f2c1ea2bd82e6c006f39d02ff1426593b24a0",
-  "releaseNotes": "시합 시나리오 #2의 손·발 역할을 구체화했습니다. 앞발손=칼라, 뒷발손=소매, 앞발=오우치 공격발로 고정하고, 오른발 앞 예시·좌우 미러링·오우치를 피하면 새 앞다리 싱글렉·0–30초 경기 시작 리허설을 추가했습니다.",
-  "publishedAt": "2026-08-29T08:28:08.675Z",
-  "sourceCommit": "ec185edee1fbd236a7924aa208ff7156ea96ee30",
-  "mirroredAt": "2026-08-29T08:29:42.304Z"
+  "sha256": "a183ed6edaccd12786493119dcedbf753a8fbb63135d52acd7d84afb22f499d7",
+  "releaseNotes": "시합 시나리오 #2에 주력 싱글렉 마무리 Run the Pipe를 추가했습니다. 오우치 회피 → 새 앞다리 헤드 인사이드 싱글 → 팔꿈치·머리 위치 안정 → 발 이동과 몸 회전으로 마무리 → 탑 안정화까지 5단계와 Gold BJJ 영상을 포함합니다.",
+  "publishedAt": "2026-08-29T12:50:42.745Z",
+  "sourceCommit": "a5f0f0b177d2e9784fb04b29e42da72e7315aa1f",
+  "mirroredAt": "2026-08-29T12:52:28.802Z"
 }
