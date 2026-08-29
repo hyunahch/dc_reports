@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.5.6",
-  "versionCode": 100013,
+  "version": "0.5.7",
+  "versionCode": 100014,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "57cb8e55e07f8efc477a5938478b7d9e18c12986fa99c9f5a038cb8779051c20",
-  "releaseNotes": "시합 시나리오에 두 번째 개인 A-Game인 상대 선그립 → 스탠딩 유지 대응을 추가했습니다. 두 번째 그립 차단, 내 컨트롤 확보, 안쪽 발걸기/오우치 계열, 다리를 빼면 싱글렉 연결, 상대가 앉으면 기존 스파이더 대응 시나리오로 이동하는 분기를 포함합니다.",
-  "publishedAt": "2026-08-29T07:23:07.882Z",
-  "sourceCommit": "a06d6a6169cb61a6e89bb0f6b218b7efe276cf90",
-  "mirroredAt": "2026-08-29T07:25:34.715Z"
+  "sha256": "7c8ee38b0b9eaef0095cb3611e3f2c1ea2bd82e6c006f39d02ff1426593b24a0",
+  "releaseNotes": "시합 시나리오 #2의 손·발 역할을 구체화했습니다. 앞발손=칼라, 뒷발손=소매, 앞발=오우치 공격발로 고정하고, 오른발 앞 예시·좌우 미러링·오우치를 피하면 새 앞다리 싱글렉·0–30초 경기 시작 리허설을 추가했습니다.",
+  "publishedAt": "2026-08-29T08:28:08.675Z",
+  "sourceCommit": "ec185edee1fbd236a7924aa208ff7156ea96ee30",
+  "mirroredAt": "2026-08-29T08:29:42.304Z"
 }
