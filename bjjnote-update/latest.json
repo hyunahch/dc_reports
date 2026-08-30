@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.2",
-  "versionCode": 100026,
+  "version": "0.6.3",
+  "versionCode": 100027,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "90d691a1fb146ef98feb14eebf645f698e59f85302735e6b322fbb4b4be3b705",
-  "releaseNotes": "흐름 탭에서 새 모바일 화면과 구형 Flow 화면이 동시에 보이던 중복 렌더링을 수정했습니다. 모바일 앱에서는 이제 새 Flow 화면만 단독으로 활성화되며, 구형 flowAppPanel이 생성되더라도 즉시 제거·차단합니다. 시합 시나리오 화면에서는 첫 시합 준비 가이드를 상단으로 정리하고 기존 경기 시작 영역은 개인 시나리오로 구분했습니다. 빌드 단계에도 구형 Flow 렌더러가 모바일 산출물에 포함되지 않는지 검증을 추가했습니다.",
-  "publishedAt": "2026-08-29T23:31:21.783Z",
-  "sourceCommit": "d40d76f6161e3c758bffbb018a118c1efeb64a12",
-  "mirroredAt": "2026-08-29T23:33:05.513Z"
+  "sha256": "8f2b60d8950a055856f10630ecf320d1cd4885e500fa03590392a6dee9e4e947",
+  "releaseNotes": "기술 흐름 상세를 새 모바일 Flow 안에 복원했습니다. 4개 흐름 목차에서 하나를 선택하면 전용 상세 화면으로 들어가며, 기술 연결과 상대 반응별 선택을 함께 볼 수 있습니다. 각 기술과 다음 기술 버튼은 해당 기술 상세로 이어지고, 안드로이드 뒤로가기는 상세에서 4개 흐름 목차로 먼저 돌아갑니다. 구형 Flow 렌더러는 다시 살리지 않고 새 모바일 셸의 단일 화면 구조를 유지합니다.",
+  "publishedAt": "2026-08-29T23:58:47.463Z",
+  "sourceCommit": "82e6ac6f7bd356e842279a1b1720d7d87eab4c79",
+  "mirroredAt": "2026-08-30T00:00:11.128Z"
 }
