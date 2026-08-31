@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.4",
-  "versionCode": 100028,
+  "version": "0.6.6",
+  "versionCode": 100035,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "ac31beda2e8dd65aaf02ebdfc01a6dc7c0c9a30f10607333d72a80ce4dac9c38",
-  "releaseNotes": "홈 화면을 앱답게 다듬었습니다. 최근 본 기술을 오늘의 포커스로 크게 보여주고, 11월 7일 첫 시합 준비를 홈에서 바로 열 수 있는 D-day 카드를 추가했습니다. 기술 찾기·드릴·훈련 기록은 빠른 실행으로 정리하고, 6개 포지션은 휴대폰에서 가로로 넘기는 짧은 카드로 바꿨습니다. 최근 활동과 기존 인앱 업데이트 기능은 그대로 유지합니다.",
-  "publishedAt": "2026-08-30T21:45:15.284Z",
-  "sourceCommit": "0f59b4b8a2c298497a88416ae7dc042d946ba190",
-  "mirroredAt": "2026-08-30T21:46:58.583Z"
+  "sha256": "b73f6ea88d144c0a5268c662b17b508364686a81c302b30b67ba8fee97206ffd",
+  "releaseNotes": "탑 사이드 컨트롤에 도착한 뒤 무엇을 해야 할지 바로 판단할 수 있는 ‘여기서 뭘 하지?’ 포지션 플레이북을 추가했습니다. 먼저 3초 안정 → 상대 반응 선택 → 내 첫 선택 → 막히면 다음 선택 순서로 안내하고, 아메리카나·암바·기무라 기존 기술 상세와 마운트 포지션을 직접 연결합니다. 니 컷 패스 상세 끝에는 ‘도착 위치 · 탑 사이드 컨트롤’ 카드가 생겨 플레이북으로 바로 이어지며, 기술 라이브러리의 탑 사이드 포지션에서도 플레이북을 열 수 있습니다. Android 뒤로가기는 플레이북에서 원래 기술 상세/포지션으로 복귀하도록 보강했습니다.",
+  "publishedAt": "2026-08-31T05:50:01.917Z",
+  "sourceCommit": "2272c308906b5833e99b3c2fc2b68b544ec79f03",
+  "mirroredAt": "2026-08-31T05:51:32.888Z"
 }
