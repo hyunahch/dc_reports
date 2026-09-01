@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-01T01:15:00Z",
+  "curationMode": "assistant-reviewed",
+  "featuredGuardPullVideoId": "vndl-first-white-belt-comp",
+  "videos": [
+    {
+      "id": "vndl-first-white-belt-comp",
+      "youtubeId": "bM83Qw1sMN0",
+      "title": "초보 4명의 첫 주짓수 대회",
+      "originalTitle": "A Jiu Jitsu Beginner's FIRST White Belt Competition",
+      "channel": "VNDL Jiu-Jitsu",
+      "duration": "16:07",
+      "categories": ["first", "opening", "operation"],
+      "badge": "첫 대회 · 여러 경기",
+      "summary": "한 명의 잘 풀린 경기만 보지 않고 여러 초보자의 첫 대회 흐름과 긴장, 경기 간 차이를 비교하기 좋다.",
+      "watchPoints": [
+        "심판 시작 신호 뒤 첫 10초에 두 선수의 발이 어떻게 움직이는지",
+        "계획대로 안 풀릴 때 멈추는지, 다시 자세와 포지션을 정리하는지",
+        "첫 공격보다 먼저 안정된 포지션을 만드는 순간이 언제인지"
+      ],
+      "startSeconds": 280,
+      "sourceType": "curated-core"
+    },
+    {
+      "id": "vince-first-gi-commentary",
+      "youtubeId": "gK3afHWlVW8",
+      "title": "화이트벨트 첫 Gi 대회 + 본인 해설",
+      "originalTitle": "First White Belt Gi BJJ Tournament (Fuji) + Commentary",
+      "channel": "Vince Nerone",
+      "duration": "14:30",
+      "categories": ["first", "operation"],
+      "badge": "첫 대회 · 해설",
+      "summary": "경기 영상만 보는 것보다 당사자가 무엇을 느꼈고 어디서 판단이 꼬였는지 함께 들을 수 있어 복기용으로 좋다.",
+      "watchPoints": [
+        "긴장 때문에 평소보다 빨라지거나 힘이 들어가는 구간",
+        "좋은 포지션을 얻은 뒤 바로 공격하는지 먼저 고정하는지",
+        "경기 후 본인이 어떤 선택을 실수로 짚는지"
+      ],
+      "startSeconds": 0,
+      "sourceType": "curated-core"
+    },
+    {
+      "id": "enoch-first-match",
+      "youtubeId": "b0g07etWmAI",
+      "title": "첫 경기에서 계획이 바로 깨진 사례",
+      "originalTitle": "First BJJ Competition - White Belt Match 1",
+      "channel": "Enoch Smith Jr",
+      "duration": "경기 영상",
+      "categories": ["first", "opening", "operation"],
+      "badge": "화이트벨트 · 첫 경기",
+      "summary": "초반 테이크다운 시도가 막힌 뒤 계획이 깨지고 바텀에서 대부분의 시간을 보낸 첫 경기라 다음 판단을 보는 자료로 좋다.",
+      "watchPoints": [
+        "첫 공격이 실패한 직후 발과 자세가 어떻게 변하는지",
+        "불리한 포지션에서 무리하게 뒤집으려 하는지 단계적으로 탈출하는지",
+        "점수 차가 작아도 경기 흐름이 얼마나 다르게 느껴지는지"
+      ],
+      "startSeconds": 0,
+      "sourceType": "curated-core"
+    },
+    {
+      "id": "gabriel-five-month-first-comp",
+      "youtubeId": "arQ3SZtvLbU",
+      "title": "5개월 차의 첫 화이트벨트 대회",
+      "originalTitle": "FIRST BJJ TOURNAMENT AS A WHITE BELT",
+      "channel": "Gabriel Sey",
+      "duration": "첫 대회 영상",
+      "categories": ["first", "opening"],
+      "badge": "5개월 차 · 첫 대회",
+      "summary": "오랫동안 수련한 선수보다 입문 초기에 첫 대회를 치르는 사람의 속도와 선택을 비교하기 좋은 사례다.",
+      "watchPoints": [
+        "훈련 롤보다 강한 첫 접촉과 속도에 어떻게 적응하는지",
+        "시작 직후 정면에 오래 머무는지 각도를 만들며 움직이는지",
+        "좋은 위치를 얻었을 때 베이스를 먼저 만드는지"
+      ],
+      "startSeconds": 0,
+      "sourceType": "curated-core"
+    }
+  ]
+}
