@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.10",
-  "versionCode": 100039,
+  "version": "0.6.11",
+  "versionCode": 100040,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "43c2e451952b7644425ccd4956dcced3ced6f31e213beafbc6ce992fc419f54d",
-  "releaseNotes": "초보자 시합 참고 영상을 앱 버전과 분리된 원격 피드로 전환해 검증된 기본 영상은 유지하면서 새 화이트벨트·첫 대회 영상을 주기적으로 추가할 수 있게 했습니다. 공개 콘텐츠 저장소의 주간 갱신 작업은 YouTube에서 새 후보를 찾아 제목·길이·중복·초보 경기 여부·Embed 가능 신호를 걸러 최대 3개의 순환 영상을 교체하며, 실패하거나 안전한 후보가 없으면 기존 피드를 그대로 유지합니다. 또한 인앱 YouTube를 재생한 뒤 뒤로가기·다른 탭 이동·시합 화면 이탈 시 숨겨진 iframe이 남아 소리가 계속 나던 문제를 수정했습니다. 화면을 떠나는 즉시 플레이어를 제거하고 원래 썸네일과 재생 버튼으로 복원하며, 이 동작을 모바일 회귀 테스트로 고정했습니다.",
-  "publishedAt": "2026-09-01T01:33:19.742Z",
-  "sourceCommit": "b5e213c7a42338d0b46f3c38e7e87e0b8e2d1cb0",
-  "mirroredAt": "2026-09-01T01:34:36.112Z"
+  "sha256": "c803c6d368c1def94cb04311d936c2dd01bd4210a9baf6557db3cd86812e9c74",
+  "releaseNotes": "노트 탭에 개인 영상 복기를 추가했습니다. 짧은 스파링·상황 영상을 기기에만 저장하고 경기 시작, 가드 풀 대응, 탑 사이드, 마운트 탈출 등 상황과 영상 속 본인을 지정해 기록할 수 있습니다. 저장한 영상에서는 ChatGPT로 복기하기를 통해 대표 장면 6장과 상황별 분석 프롬프트를 준비해 OS 공유창으로 전달하며, 별도 OpenAI API를 호출하지 않아 추가 API 비용이 발생하지 않습니다. 공유가 지원되지 않는 환경에서는 프롬프트 복사 방식으로 이어갈 수 있고, ChatGPT에서 받은 분석 결과는 같은 영상 기록에 다시 저장할 수 있습니다. 영상 원본은 외부 서버로 자동 업로드하지 않습니다.",
+  "publishedAt": "2026-09-01T06:39:50.799Z",
+  "sourceCommit": "398f3bd308ef7bf06ec499d90ca8937fd7fbbaba",
+  "mirroredAt": "2026-09-01T06:41:38.178Z"
 }
