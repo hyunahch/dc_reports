@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.11",
-  "versionCode": 100040,
+  "version": "0.6.14",
+  "versionCode": 100057,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "c803c6d368c1def94cb04311d936c2dd01bd4210a9baf6557db3cd86812e9c74",
-  "releaseNotes": "노트 탭에 개인 영상 복기를 추가했습니다. 짧은 스파링·상황 영상을 기기에만 저장하고 경기 시작, 가드 풀 대응, 탑 사이드, 마운트 탈출 등 상황과 영상 속 본인을 지정해 기록할 수 있습니다. 저장한 영상에서는 ChatGPT로 복기하기를 통해 대표 장면 6장과 상황별 분석 프롬프트를 준비해 OS 공유창으로 전달하며, 별도 OpenAI API를 호출하지 않아 추가 API 비용이 발생하지 않습니다. 공유가 지원되지 않는 환경에서는 프롬프트 복사 방식으로 이어갈 수 있고, ChatGPT에서 받은 분석 결과는 같은 영상 기록에 다시 저장할 수 있습니다. 영상 원본은 외부 서버로 자동 업로드하지 않습니다.",
-  "publishedAt": "2026-09-01T06:39:50.799Z",
-  "sourceCommit": "398f3bd308ef7bf06ec499d90ca8937fd7fbbaba",
-  "mirroredAt": "2026-09-01T06:41:38.178Z"
+  "sha256": "196bd9b251662d87ebab6f1f8ea6d06bfd8cc86f3c2c50c039806a86340bb1d7",
+  "releaseNotes": "Android에서 YouTube 전체화면 뒤로가기가 상세페이지를 이탈하지 않도록 수정했습니다. 전체화면을 먼저 종료하고 영상을 일시정지한 뒤 같은 상세페이지의 인라인 플레이어로 복귀하며, 다음 뒤로가기부터 기존 앱 내비게이션이 동작합니다. 스파이더가드 기본 탈출·라쏘가드 기본 탈출을 포함하고, 벽 인버전이 아직 어려운 단계에서 연습할 수 있도록 '벽 가드 리텐션 힙 스위치 → 벽 하프 그랜비 → 벽 인버전 숄더 롤' 3단계 솔로 드릴 progression을 추가했습니다.",
+  "publishedAt": "2026-09-01T21:25:59.534Z",
+  "sourceCommit": "d3c0e75c579a963984067acf5303e93e7e666b63",
+  "mirroredAt": "2026-09-01T21:34:03.909Z"
 }
