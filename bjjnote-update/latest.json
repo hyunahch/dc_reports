@@ -1,11 +1,11 @@
 {
   "channel": "internal",
-  "version": "0.6.15",
-  "versionCode": 100058,
+  "version": "0.6.16",
+  "versionCode": 100060,
   "apkUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-update/bjjnote.apk",
-  "sha256": "d2bc2d0c24043e0e05336b19d82e6fc5fb88ba9cfb19b67a15ccc1c1fbab4743",
-  "releaseNotes": "앱 런처 아이콘을 주짓수 노트의 현재 디자인 톤에 맞춘 블루그레이 카드 스택·그래플링 심볼·벨트 매듭 디자인으로 교체했습니다. 기존 v0.6.14의 Android YouTube 전체화면 뒤로가기 수정과 스파이더/라쏘 탈출, 벽 솔로 드릴 progression은 그대로 유지됩니다.",
-  "publishedAt": "2026-09-02T00:40:46.258Z",
-  "sourceCommit": "f4f304b4c99ba01f18f85c3df788817f5a2af746",
-  "mirroredAt": "2026-09-02T00:42:42.309Z"
+  "sha256": "68c12be44ab7d3ef2e83dd736b2ca0e14ba746980ef7b279599f2345102e6071",
+  "releaseNotes": "OTA 업데이트 기반을 추가했습니다. 이번 v0.6.16을 한 번 설치한 뒤에는 기술·드릴·영상·문구·레이아웃 같은 웹 레이어 변경을 APK 재설치 없이 백그라운드로 내려받아 다음 실행부터 자동 적용합니다. 앱 아이콘·Android 권한·네이티브 플러그인처럼 바이너리 변경이 필요한 경우에만 기존 APK 업데이트 배너가 표시됩니다.",
+  "publishedAt": "2026-09-02T01:50:15.370Z",
+  "sourceCommit": "3db51154fccbe1bf5b482b07eb8e7e4e188ffa6a",
+  "mirroredAt": "2026-09-02T10:40:14.799Z"
 }
