@@ -1,5 +1,8 @@
 {
-  "enabled": false,
+  "enabled": true,
   "expectedVersion": "1.0.0",
-  "sourceUrl": ""
+  "sourceUrl": "https://sdmntprkoreacentral.oaiusercontent.com/files/00000000-f694-8206-afb5-cb40c93712c5/raw?se=2026-09-02T01%3A44%3A19Z&sp=r&sv=2026-02-06&sr=b&scid=4dd09f33-b009-5fc7-9c32-101c41119813&skoid=3e273c3d-5ea1-4088-9e18-79685531b184&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T01%3A02%3A41Z&ske=2026-09-03T01%3A02%3A41Z&sks=b&skv=2026-02-06&sig=DPAi0FwjNp8ZUAgRx5hiU6jsRNdKyDm1m9wsf/uP87A%3D",
+  "sourceRunId": 33579950401,
+  "sourceCommit": "b97708777dbbbf21ccf898cb2eb5b7be73130d81",
+  "expectedSha256": "891d88c96d1f90476b4e2f7ef249d1ecc41cebf1318bc1d321cc99e7b754b3a6"
 }
