@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "channel": "internal",
+  "version": "1.0.0",
+  "nativeSchema": 1,
+  "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
+  "sha256": "891d88c96d1f90476b4e2f7ef249d1ecc41cebf1318bc1d321cc99e7b754b3a6",
+  "releaseNotes": "OTA 업데이트 기반을 추가했습니다. 이후 기술·드릴·영상·문구·레이아웃 같은 웹 레이어 변경은 APK를 다시 설치하지 않고 자동으로 내려받아 다음 실행부터 적용합니다.",
+  "publishedAt": "2026-09-02T01:38:31.493Z",
+  "sourceCommit": "b97708777dbbbf21ccf898cb2eb5b7be73130d81",
+  "mirroredAt": "2026-09-02T01:39:56.503Z"
+}
