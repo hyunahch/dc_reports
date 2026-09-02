@@ -1,0 +1,109 @@
+name: BJJ Note OTA Mirror
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "bjjnote-ota/source.json"
+      - ".github/workflows/bjjnote-ota-mirror.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bjjnote-ota-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public mirror repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read OTA source
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const source = require('./bjjnote-ota/source.json');
+          fs.appendFileSync(process.env.GITHUB_ENV, `OTA_ENABLED=${source.enabled === true ? 'true' : 'false'}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `EXPECTED_VERSION=${source.expectedVersion || ''}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `SOURCE_URL=${source.sourceUrl || ''}\n`);
+          NODE
+
+      - name: Disabled source guard
+        if: env.OTA_ENABLED != 'true'
+        run: echo "OTA mirror source is disabled; nothing to publish."
+
+      - name: Download QA-passed private OTA artifact
+        if: env.OTA_ENABLED == 'true'
+        run: |
+          set -euo pipefail
+          test -n "$EXPECTED_VERSION"
+          test -n "$SOURCE_URL"
+          rm -rf /tmp/bjjnote-ota /tmp/bjjnote-ota-artifact.zip
+          mkdir -p /tmp/bjjnote-ota
+          curl --fail --location --retry 3 --retry-delay 2 "$SOURCE_URL" -o /tmp/bjjnote-ota-artifact.zip
+          unzip -t /tmp/bjjnote-ota-artifact.zip
+          unzip -o /tmp/bjjnote-ota-artifact.zip -d /tmp/bjjnote-ota
+
+      - name: Publish stable public OTA files
+        if: env.OTA_ENABLED == 'true'
+        run: |
+          set -euo pipefail
+          BUNDLE="$(find /tmp/bjjnote-ota -type f -name 'bundle.zip' -print -quit)"
+          MANIFEST="$(find /tmp/bjjnote-ota -type f -name 'latest.json' -print -quit)"
+          test -n "$BUNDLE"
+          test -n "$MANIFEST"
+          test -s "$BUNDLE"
+          test -s "$MANIFEST"
+          mkdir -p bjjnote-ota
+          cp "$BUNDLE" bjjnote-ota/bundle.zip
+          cp "$MANIFEST" bjjnote-ota/latest.json
+          unzip -t bjjnote-ota/bundle.zip
+          node <<'NODE'
+          const fs = require('fs');
+          const crypto = require('crypto');
+          const manifestPath = 'bjjnote-ota/latest.json';
+          const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+          const expected = process.env.EXPECTED_VERSION;
+          if (manifest.version !== expected) {
+            throw new Error(`OTA artifact version ${manifest.version} != expected ${expected}`);
+          }
+          if (Number(manifest.schemaVersion) !== 1) throw new Error('unsupported OTA manifest schema');
+          if (!Number.isInteger(Number(manifest.nativeSchema)) || Number(manifest.nativeSchema) < 1) throw new Error('invalid nativeSchema');
+          const bundle = fs.readFileSync('bjjnote-ota/bundle.zip');
+          const sha256 = crypto.createHash('sha256').update(bundle).digest('hex');
+          if (manifest.sha256 !== sha256) throw new Error(`OTA bundle SHA mismatch: ${manifest.sha256} != ${sha256}`);
+          manifest.bundleUrl = 'https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip';
+          manifest.mirroredAt = new Date().toISOString();
+          fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
+          fs.writeFileSync('bjjnote-ota/mirror-status.json', JSON.stringify({
+            status: 'ready',
+            version: manifest.version,
+            nativeSchema: manifest.nativeSchema,
+            bundleUrl: manifest.bundleUrl,
+            sha256,
+            sourceCommit: manifest.sourceCommit,
+            mirroredAt: manifest.mirroredAt,
+          }, null, 2) + '\n');
+          NODE
+
+      - name: Commit public OTA channel
+        if: env.OTA_ENABLED == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bjjnote-ota/bundle.zip bjjnote-ota/latest.json bjjnote-ota/mirror-status.json
+          if git diff --cached --quiet; then
+            echo "Public OTA mirror already current."
+          else
+            git commit -m "Mirror BJJ Note OTA v$EXPECTED_VERSION"
+            git push origin HEAD:main
+          fi
