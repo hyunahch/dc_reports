@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "2c1f2102babb1ec0da05fd13baafcccc23f4818baecc4c5a1bbbd02f996454b7",
-  "releaseNotes": "클로즈드가드 탑의 두 탈출 기술 대표 영상을 Gi 기준으로 정리했습니다. 서서 클로즈드가드 열기는 Jason Scully의 Gi closed guard break 영상으로, 무릎에서 클로즈드가드 열기는 John Danaher의 knee post method 영상으로 교체했으며 각 상세페이지의 영상 안내 문구와 회귀 테스트도 함께 갱신했습니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
-  "publishedAt": "2026-09-03T21:58:16.281Z",
-  "sourceCommit": "6598c3f9c2b61f4d7bb79950b7ce8e3efe644098",
-  "mirroredAt": "2026-09-03T21:59:01.067Z"
+  "sha256": "fa5d1306b4686908b483f11e896b91688e8874df3be2ed7d1e2fb11178129208",
+  "releaseNotes": "홈의 최근 본 기술과 최근 활동에서 기술을 누르면 목차에 머무르지 않고 해당 기술 상세페이지로 직접 이동하도록 수정했습니다. 예전 버전에서 저장되어 positionId가 없거나 현재 포지션과 맞지 않는 최근 기록도 실제 기술 카드를 전체 포지션에서 찾아 복구해 상세로 이동합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
+  "publishedAt": "2026-09-03T22:15:58.490Z",
+  "sourceCommit": "fe4ec0df071ae4ff4ebba1e32d4658ab61c52f32",
+  "mirroredAt": "2026-09-03T22:16:36.130Z"
 }
