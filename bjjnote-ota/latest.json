@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "5cae78d698adb5ecc3f89581e5b2bea7f439f4519a38e9b5fdd9f5aca9a6663a",
-  "releaseNotes": "하이가드 탑이 모바일 포지션 가로 목록의 맨 끝에 숨어 보이지 않던 노출 문제를 수정했습니다. 하이가드 탑을 클로즈드가드 탑 바로 다음의 세 번째 포지션으로 고정하고, 홈의 포지션에서 찾기에도 하이가드 탑 카드를 추가했습니다. 하이가드 밀어내기 패스와 상파울루(토지) 압박 패스의 내용은 그대로 유지됩니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
-  "publishedAt": "2026-09-03T21:51:21.838Z",
-  "sourceCommit": "e9097d520f8fba9a4816e657e4924b7cb90af8cf",
-  "mirroredAt": "2026-09-03T21:53:25.274Z"
+  "sha256": "2c1f2102babb1ec0da05fd13baafcccc23f4818baecc4c5a1bbbd02f996454b7",
+  "releaseNotes": "클로즈드가드 탑의 두 탈출 기술 대표 영상을 Gi 기준으로 정리했습니다. 서서 클로즈드가드 열기는 Jason Scully의 Gi closed guard break 영상으로, 무릎에서 클로즈드가드 열기는 John Danaher의 knee post method 영상으로 교체했으며 각 상세페이지의 영상 안내 문구와 회귀 테스트도 함께 갱신했습니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
+  "publishedAt": "2026-09-03T21:58:16.281Z",
+  "sourceCommit": "6598c3f9c2b61f4d7bb79950b7ce8e3efe644098",
+  "mirroredAt": "2026-09-03T21:59:01.067Z"
 }
