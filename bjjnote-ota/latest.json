@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "bf8695f93ff1ebd52be27bbc010a6503a5283accb4e7b038d6166d8acc6480bc",
-  "releaseNotes": "홈 화면의 첫 시합 준비 카드와 수련 가이드 카드에 기존 주짓수 노트 일러스트 자산을 실제 앱 UI에 적용했습니다. 내용과 직접 연결되는 카드에만 일러스트를 넣고, 모두 contain 방식으로 잘림 없이 표시되도록 했습니다. 기존 홈 구조와 하단 탭은 유지합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
-  "publishedAt": "2026-09-04T05:03:29.670Z",
-  "sourceCommit": "dbbaa5512bb1ec5e8ce8ff42ed045d6578846840",
-  "mirroredAt": "2026-09-04T06:21:03.047Z"
+  "sha256": "4f823cfbaa9f23c62767128a8aa85a6defdd5a74abd9998b25b07663eaadc936",
+  "releaseNotes": "홈 수련 가이드 카드에서 머리 묶기 상세의 잘린 단계 이미지를 제거하고, 기존 앱의 완결형 수련 준비 일러스트로 교체했습니다. 홈 대표 이미지는 상세 단계 조각을 재사용하지 않도록 QA도 보강했습니다. 첫 시합 준비 카드와 기존 홈 구조·하단 탭은 유지합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
+  "publishedAt": "2026-09-04T10:58:02.255Z",
+  "sourceCommit": "2f5a19960f390e3aaffb677a3b7991ad2104411d",
+  "mirroredAt": "2026-09-04T10:59:25.842Z"
 }
