@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "fa5d1306b4686908b483f11e896b91688e8874df3be2ed7d1e2fb11178129208",
-  "releaseNotes": "홈의 최근 본 기술과 최근 활동에서 기술을 누르면 목차에 머무르지 않고 해당 기술 상세페이지로 직접 이동하도록 수정했습니다. 예전 버전에서 저장되어 positionId가 없거나 현재 포지션과 맞지 않는 최근 기록도 실제 기술 카드를 전체 포지션에서 찾아 복구해 상세로 이동합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
-  "publishedAt": "2026-09-03T22:15:58.490Z",
-  "sourceCommit": "fe4ec0df071ae4ff4ebba1e32d4658ab61c52f32",
-  "mirroredAt": "2026-09-03T22:16:36.130Z"
+  "sha256": "5c13bc513d099dee8b229573443bf1be1bf2c424d3ec6941508716ac015c861e",
+  "releaseNotes": "Home V2의 포지션 찾기 아래에 새 '수련 가이드' 학습 레이어를 추가하고 첫 Pilot으로 매트에서 머리 정리하기를 제공합니다. 짧은·애매한 길이의 2단 분할 포니, 턱선~어깨 길이의 양쪽 브레이드/2단 포니, 긴 머리의 낮은 브레이드를 길이별로 정리했으며 라이브 롤링 전에는 실핀·단단한 집게 등 눌리거나 빠질 수 있는 부품을 제거하도록 안내합니다. Android Back은 상세 → 수련 가이드 목록 → Home 순으로 복귀합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
+  "publishedAt": "2026-09-03T23:52:14.306Z",
+  "sourceCommit": "b5f8b8a5812f8182f1e7a62255bf96184960dc65",
+  "mirroredAt": "2026-09-04T00:00:47.241Z"
 }
