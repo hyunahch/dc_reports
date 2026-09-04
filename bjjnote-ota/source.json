@@ -1,8 +1,8 @@
 {
   "enabled": true,
-  "expectedVersion": "1.0.6",
-  "sourceUrl": "https://sdmntprkoreacentral.oaiusercontent.com/files/00000000-e8e8-8206-a413-b42180d7038e/raw?se=2026-09-03T22%3A21%3A08Z&sp=r&sv=2026-02-06&sr=b&scid=714e736e-3b69-59dc-8963-7d21ecb7fa55&skoid=3e273c3d-5ea1-4088-9e18-79685531b184&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-03T21%3A03%3A40Z&ske=2026-09-04T21%3A03%3A40Z&sks=b&skv=2026-02-06&sig=3qhj3726UCRr5L93tvHMzqrRQyC4tq1QFVwSAGV1unc%3D",
-  "sourceRunId": 33811352138,
-  "sourceCommit": "fe4ec0df071ae4ff4ebba1e32d4658ab61c52f32",
-  "expectedSha256": "fa5d1306b4686908b483f11e896b91688e8874df3be2ed7d1e2fb11178129208"
+  "expectedVersion": "1.0.7",
+  "sourceUrl": "https://sdmntprjapaneast.oaiusercontent.com/files/00000000-d454-8209-87b3-2cb68942248c/raw?se=2026-09-04T00%3A05%3A22Z&sp=r&sv=2026-02-06&sr=b&scid=23436eac-e488-5884-8bb6-c5010374ec02&skoid=3e273c3d-5ea1-4088-9e18-79685531b184&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-03T20%3A59%3A38Z&ske=2026-09-04T20%3A59%3A38Z&sks=b&skv=2026-02-06&sig=ViAib1oIaCv4GAvMWcEiwUugXAepFhXp%2B89TEizT8Fw%3D",
+  "sourceRunId": 33818675029,
+  "sourceCommit": "b5f8b8a5812f8182f1e7a62255bf96184960dc65",
+  "expectedSha256": "5c13bc513d099dee8b229573443bf1be1bf2c424d3ec6941508716ac015c861e"
 }
