@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "4f823cfbaa9f23c62767128a8aa85a6defdd5a74abd9998b25b07663eaadc936",
-  "releaseNotes": "홈 수련 가이드 카드에서 머리 묶기 상세의 잘린 단계 이미지를 제거하고, 기존 앱의 완결형 수련 준비 일러스트로 교체했습니다. 홈 대표 이미지는 상세 단계 조각을 재사용하지 않도록 QA도 보강했습니다. 첫 시합 준비 카드와 기존 홈 구조·하단 탭은 유지합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
-  "publishedAt": "2026-09-04T10:58:02.255Z",
-  "sourceCommit": "2f5a19960f390e3aaffb677a3b7991ad2104411d",
-  "mirroredAt": "2026-09-04T10:59:25.842Z"
+  "sha256": "a57fdb624c8623b117b27bb86ab803ec421ca2d1508e5b1411aec6c8ff744b63",
+  "releaseNotes": "2026-11-09 니 컷 수업 내용을 영상 편집 없이 기술 상세의 날짜별 ‘수업 노트’로 추가했습니다. 엘보-니 베이스, 프레임에 밀릴 때 발 베이스·뒤로 걷기, 패스가 막힐 때 다리 쪽 재정비, 무릎 프레임을 눌러 반대편/백으로 전환하는 4개 실전 메모와 원본 타임코드를 포함합니다. 수업 원본 영상은 앱 번들에 포함하거나 수정하지 않습니다. 기존 Spider Guard Armbar 대표 영상은 재생 불가가 확인되어 현재 공개된 동일 흐름 교육 영상으로 교체했습니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
+  "publishedAt": "2026-11-12T07:49:58.569Z",
+  "sourceCommit": "66ec5253a5694767e5ee2f5f41faff52a5945b52",
+  "mirroredAt": "2026-11-12T07:52:07.380Z"
 }
