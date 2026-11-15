@@ -4,9 +4,9 @@
   "version": "1.0.14",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "1c356b3146fa66bcacfae03569044bb6af39b889d9fb1fb70b1ecaee8d9f3dfb",
+  "sha256": "c512e6d4d5faabe37f7f38e98b81cbf0e8acb71cf442cc8e83cb21f48873cb68",
   "releaseNotes": "노트 탭에 날짜별 ‘수업 기록’을 추가했습니다. 각 Technique의 classNotes를 날짜 기준으로 자동 묶어 그날 배운 기술, 학습 포인트, 원본 수업 영상 파일명과 타임코드를 한 화면에서 확인할 수 있습니다. 2026-11-09 니 컷 패스 수업은 4개 학습 포인트와 원본 1000083762.mp4가 표시되며 기술 상세로 바로 이동할 수 있습니다. 수업 기록은 classNotes가 늘어날 때 자동 누적됩니다. 2026-11-09 니 컷 수업 노트에는 일치도가 높은 관련 YouTube 교육 영상도 연결했으며 정확한 대응 영상이 없는 재정비 항목은 텍스트만 유지합니다. APK는 v0.6.16 그대로이며 콘텐츠 OTA로 적용됩니다.",
-  "publishedAt": "2026-11-14T00:21:21.735Z",
-  "sourceCommit": "5d5a61b3e4bdecd5bd20b45aba626e444c1628b9",
-  "mirroredAt": "2026-11-14T00:22:01.114Z"
+  "publishedAt": "2026-11-15T03:36:34.565Z",
+  "sourceCommit": "6536387a2147f2d2fb62cbacee165632c8ba4d1f",
+  "mirroredAt": "2026-11-15T03:41:06.984Z"
 }
