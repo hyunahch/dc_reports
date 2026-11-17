@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "56f4257991027073db1a80f38ecd11aeee57fcc6c1d02baf1ad6416af45b6589",
-  "releaseNotes": "홈에서 실제로 참가하지 않은 2026년 11월 7일 첫 시합 준비 카드와 D-day 표기를 제거했습니다. 노트 → 수업 기록의 원본 영상 파일명 대신 개인 유튜브 수업 영상 보기와 확인된 구간 시작 시점 이동 링크를 제공합니다. 일부 공개 영상은 공개 업데이트 파일에 포함하지 않으며, 사용자가 개인 JSON 연결 파일을 기기에서 한 번 불러오면 그 휴대전화에만 링크가 저장됩니다. 아직 업로드되지 않은 원본은 영상 연결 대기로 표시하고 다른 수업 영상으로 대체하지 않습니다. 기존 수업 노트·기술·드릴·수련 가이드·흐름 및 Android APK v0.6.16은 그대로 유지합니다. 콘텐츠 OTA v1.0.24.",
-  "publishedAt": "2026-11-17T06:08:01.807Z",
-  "sourceCommit": "63a466bfa8e090be8f16e66ac049ceca8703cb54",
-  "mirroredAt": "2026-11-17T06:14:00.392Z"
+  "sha256": "2fa9fa09e6c010e764ebe01132cc881a40838d93c90d12fa1735432cd52dce7e",
+  "releaseNotes": "2차 수업 기록: 2026년 9월 9~29일 10일·원본 14개 수업을 날짜별 카테고리와 배운 주제로 정리했습니다. 수업 주제는 기술 완성 여부와 별개인 학습 분류이며, 확정된 9/9 시트벨트 및 9/29 스파이더→트라이앵글만 상세 기술에 연결됩니다. 미확정 기술 링크·추정 동작 설명은 추가하지 않습니다. 개인 유튜브 수업 영상 링크는 기존처럼 기기에만 저장하며 미연결 원본은 연결 대기로 표시합니다. Android 네이티브 스키마와 기존 학습 기록은 유지합니다.",
+  "publishedAt": "2026-11-17T23:48:39.261Z",
+  "sourceCommit": "56ce703632697a3e8bd41e7c209cdd5880daabc0",
+  "mirroredAt": "2026-11-17T23:52:00.389Z"
 }
