@@ -1,9 +1,9 @@
 {
   "status": "ready",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "b61fa94476e0121d150a52a51e60bc4bdea7d420329790bb7eb0d51428270172",
-  "sourceCommit": "ef26f038a1a86570e93a6d5b7644070dab94bf7b",
-  "mirroredAt": "2026-11-22T06:44:10.379Z"
+  "sha256": "475f97e21148f9940402505c1da41dc58c9258c5ba6490ce021de1bb09e60946",
+  "sourceCommit": "6cff5ce7665590ed487acfe7ed72a4bf37d2a7fa",
+  "mirroredAt": "2026-11-22T13:52:36.888Z"
 }
