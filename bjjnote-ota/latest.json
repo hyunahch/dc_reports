@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "e5707b25c41f3bb6815f58e728ef35c52f3e7a697dfab77413b992f821302d12",
-  "releaseNotes": "11월 14일 수업 분석 추가: 상대 다리 통제, 니컷 패스 방어, 무릎 프레임·가드 회복, 언더훅 압박 대응과 후속 전환을 날짜별 수업노트 5개로 정리했습니다. 정확한 훅·그립·상위/하위 전환이 영상에서 확인되지 않는 구간은 부분 확인으로 표시했으며, 근거 없는 신규 기술 상세페이지나 영상 링크는 추가하지 않았습니다. 누적 수업 주제 132개, 고유 기술 27개. 개인 수업영상 소스가 없는 날짜는 연결 대기로 표시됩니다.",
-  "publishedAt": "2026-11-22T23:23:41.883Z",
-  "sourceCommit": "029a56a2a4d07725e408fe6bb61bd149e757e3b4",
-  "mirroredAt": "2026-11-22T23:26:20.500Z"
+  "sha256": "4c884fafa020ff4960dc1ec0de4bb34af9cff6bc319e7edb985cfcb67d369806",
+  "releaseNotes": "11월 16일 기무라 중심 팔·손목 통제와 상대 팔 접기 반응에 대응하는 연습, 클로즈드가드↔사이드컨트롤 상황 훈련을 수업노트 5개로 정리했습니다. 기존 기무라 상세기술에 수업 복습노트를 연결했습니다. 정확한 그립·변형명과 다른 서브미션 완성 경로가 확인되지 않는 부분은 별도 기술로 만들지 않았습니다. 누적 수업 주제 137개, 고유 기술 27개.",
+  "publishedAt": "2026-11-22T23:42:23.915Z",
+  "sourceCommit": "ee8d58d3816efc176b9d9c1815e9d0c0b7297f9f",
+  "mirroredAt": "2026-11-22T23:43:08.865Z"
 }
