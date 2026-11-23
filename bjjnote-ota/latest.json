@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "internal",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "nativeSchema": 1,
   "bundleUrl": "https://raw.githubusercontent.com/hyunahch/dc_reports/main/bjjnote-ota/bundle.zip",
-  "sha256": "0f0600aae5f161a0960f619eff18caae56a875f4da5e10214a2af5bd4983b067",
-  "releaseNotes": "11월 20일 수업 분석: 상대 다리 움직임을 제한하고 측면으로 돌아 가드 패스 진입, 머리·가슴 압박과 브리지 차단, 양발 스텝 및 다리 걸림 대응, 사이드컨트롤 연결을 수업노트 5개로 정리했습니다. 특정 패스 변형 이름이 확인되지 않은 구간은 부분 확인으로 표시하고 신규 고유 기술을 만들지 않았습니다. 누적 수업 주제 147개, 고유 기술 27개.",
-  "publishedAt": "2026-11-23T00:27:36.591Z",
-  "sourceCommit": "69a6f4da3f241f605a6722821378816415468bb7",
-  "mirroredAt": "2026-11-23T00:59:12.243Z"
+  "sha256": "b7b6727800a8195be555659fd0ee274475fd5e3ba1319d5f301a4c310a904224",
+  "releaseNotes": "11월 21일 수업 분석: 상대 다리·무릎 통제로 균형을 흔들고, 몸 회전 및 좌우 방향 전환과 머리·골반 위치 조정을 연습한 내용을 날짜별 수업노트 5개로 추가했습니다. 후반에는 목 잡힘 방어·엉덩이 이동 탈출 상황연습을 정리했습니다. 세부 스윕 명칭과 그립은 영상 근거가 부족해 부분 확인으로 표기했고 신규 고유 기술은 생성하지 않았습니다. 누적 수업 주제 152개, 고유 기술 27개.",
+  "publishedAt": "2026-11-23T01:18:28.342Z",
+  "sourceCommit": "79b1254112c40529a4855fb1c35e553ddf5c1055",
+  "mirroredAt": "2026-11-23T01:28:48.749Z"
 }
